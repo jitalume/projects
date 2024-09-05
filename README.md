@@ -1,30 +1,42 @@
 Repository
+
 This repo contains my Capstone project for the Google data analytic program I just completed.It demonstrate the data analysis skills I gained and earned fro the course.
 In this project, I will be utilizing the skills earned from the course on data cleaning, processing and analysis to a solve a business senerio on bike sharing company.
 The objective of the bike sharing company is to convert casual riders to annual members and develope a marketing strategy that will enable the company to acheive this purpose.
 R programming language and SQL has been used as tool to ensure data cleaning and analysis.
 
+
 Executive Summary
+
 The bike-share program by the Cyclistic company is a unique system which allows options to different bikes. The fact remains that a bike share system is mostly used for shorter distances, exercises or for leisure however, its revenue generation potential enables the system to be a viable project which attracts funding from investors.
 
 Introduction
+
 A bike-share system is a practise which allows prospective riders interested in making use of a bike to have access to a bike for a specified period of time. This can also be described as a program that enables intended riders to check-out bikes whenever they are interested through the use of an App specifically for a bike-share system. The system automates the bike access through the App which unlocks the bike from the rack and takes records of the ride in the system from the time the rider starts the ride till when the bike is returned to the rack which signifies the end of the ride.
 To achieve a successful system, the bike-share program must embrace flexibility in it process management and pricing system. This will enable intended riders to have options to the type of prices available on the bike-share App. This can be a single ride pass, a return to same location pass, half-dsy ride pass, full-day ride pass etc. The bike-share program can also allow membership subscriptions such as annual, monthly or quarterly. The essence of this subscription option is to build a bike-share community to ensure the goals and objectives of the system is actualized.
+
 The benefits of a bike-share program are
+
 1.	It embraces a sociable business model which encourages networking among different individuals.
 2.	It supports a healthy environment by reducing carbon emission.
 3.	It discourages noise pollution 
 4.	It can also be cost efficient to the rider.
+5.	
 PROBLEM STATEMENT.
+
 This project shall examine the following problems
 1.	The disparity in the membership structure of the bike-share program.
 2.	Low market share and penetration
 3.	Why will casual riders be interested in becoming annual members.
 The fact remains that every business structure has challenges which keeps the management of the business to profound solutions so has to ensure a speedy success. There is a need to examine the root cause of this problem. 
+
 PROJECT STAKEHOLDERS
+
 As a junior data analyst working with the marketing analyst team at cyclistic bike-share company in Chicago, the task is to analyse data to formulate a marketing strategy that will pave a successful business operation for the bike-share company. 
 The stakeholders for this project include Lily Moreno who is the director of marketing, the director of finance, the director of operations, the cyclitic marketing analytics team who are responsible for collecting, analysing and reporting data to guide  Cyclistic marketing strategy, the executive team of the company as well as prospective bike riders.
+
 ROOT CAUSE ANALYSIS
+
 Following the request of the bike-share company, the directors want to increase annual membership. The following questions set 
 •	Why does the company want to improve annual membership? This might certainly be because they have in their database more of casual riders whose revenue are not sustainable.
 •	Why are they more casual riders? This may simply be because the fee charge on riders are affordable and riders only ride on a short distance and they are on-off.
@@ -32,12 +44,16 @@ Following the request of the bike-share company, the directors want to increase 
 •	Why are there no profit realized? This may be because most casual riders affors single ride.
 •	Why do they afford single rides? This is because they are not constant.
 Following the root cause specified above, it is factual that the bike-share company need to device a strategy that will allow casual riders to subscribe to the annual membership program so as to ensure increase in revenue that will be sustainable to the business alongside realizing more profit that will exceed the cost of maintenance.
+
 OBJECTIVE OF THE STUDY
+
 The following are the objectives of this project
 1.	To formulate a marketing strategy for the bike-share program.
 2.	To bridge the gap between casual and annual membership.
+
 PREPARE PHASE
 DATA CLEANING AND PROCESSING
+
 This project shall be using Cyclic bike share data for the period January to March 2023 provided by the Google Data Analytics Course. The dataset is a comma-separated value format (.csv).
 The raw dataset can be viewed at the following link https://divvy-tripdata.s3.amazonaws.com/index.html
 The dataset contains entries for each trip/ride taken with Cyclistic bicycles.
