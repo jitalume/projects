@@ -48,6 +48,7 @@ Following the root cause specified above, it is factual that the bike-share comp
 OBJECTIVE OF THE STUDY
 
 The following are the objectives of this project
+
 1.	To formulate a marketing strategy for the bike-share program.
 2.	To bridge the gap between casual and annual membership.
 
@@ -71,16 +72,22 @@ This pre-cleaned dataset contains a total of 5734381 entries across 12 tables, a
 •	end_lat: latitude of station at end of the ride
 •	end_lng: longitude of station at end of the ride
 •	member_casual: indication of whether customer is a Cyclistic annual member or casual rider
+
 Furthermore, in line with the privacy ethics, the personal information of riders were not included in this study. This implies that informations such as purchase history, credit card details, demographic locations cannot be explored within the scope of this project.
+
 The dataset contains entries for each trip/ride taken with Cyclistic bicycles within the the period January to March 2023. The data cleaning process is aim at ensuring all relevant information is used in the analysis. The cleaned relevant variables 
 Data analysis
+
 Data analysis is performed using R, within the RStudio interface. Appropriate R extensions are utilized, namely the tidyverse package for data analysis.
+
 We will be looking at analysis for the following, for both annual members and casual riders, comparing the two groups where appropriate:
+
 1.	Total rides taken by the first quarter in 2023
 2.	The rideable bikes used 
 3.	duration of trips.
 4.	 Start and end lat and lng
 The Big query SQL programming was also used to filter and analyse the data. This was achieved by copying the cleaned dataset from R studio and then uploading it into SQL to create a table bikeshare_ride.
+
 SELECT 
 ride_id,
 rideable_type,
@@ -90,6 +97,7 @@ start_time,
 end_time,
 duration,
 member_casual
+
  FROM `commanding-port-426503-j6.employee_data.bikeshare_ride` 
  LIMIT 1000
 
@@ -124,7 +132,9 @@ member_casual
 member_casual = 'member'
 AND rideable_type = 'classic_bike'
 LIMIT 1000
+
 From the above SQL language, 107 annual members actual took a bike ride between January to March 2023 which is further analysed into the following rideable bike as; 52 electric bikes were rode, 55 for classic bikes and none took docked bikes in the period considered.
+
 SELECT 
 ride_id,
 rideable_type,
@@ -134,7 +144,9 @@ start_time,
 end_time,
 duration,
 member_casual
+
  FROM `commanding-port-426503-j6.employee_data.bikeshare_ride` 
+ 
  WHERE
 member_casual = 'casual'
 AND rideable_type = 'classic_bike'
@@ -148,13 +160,16 @@ start_time,
 end_time,
 duration,
 member_casual
+
  FROM `commanding-port-426503-j6.employee_data.bikeshare_ride` 
  WHERE
 member_casual = 'casual'
 AND rideable_type = 'electric_bike'
 LIMIT 1000
+
 From the above SQL language, 37 casual actually took a bike ride between January to March 2023 which is further analysed into the following rideable bike as; 23 electric bikes were rode, 12 for classic bikes and 2 took docked bikes in the period considered.
 It can be understood from the above that more bike riders subscribe to the annual membership within the period under review however, the flexibility in the bike-share system allows high maintenance cost on the bikes due to long distances observed from casual riders.
+
 SELECT 
 rideable_type,
 member_casual,
@@ -165,7 +180,9 @@ member_casual = 'member'
 LIMIT 1000
 
 Setting up the environment
+
 RStudio is first loaded up with the tidyverse packages, followed by the import of our processed bikeshare_data.csv form my computer.
+
 install.packages("tidyverse")
 install.packages("skimr")
 install.packages("janitor")
@@ -180,7 +197,9 @@ install.packages("janitor")
 ── Conflicts ───────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
+> 
 ℹ Use the conflicted package to force all conflicts to become errors
+
 > library(skimr)
 > library(janitor)
 
